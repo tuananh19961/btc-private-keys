@@ -5998,7 +5998,7 @@
                                               L = !0, Y = 0, i.prop("disabled", !0), M.removeClass("btn-success").addClass("btn-danger").val("Stop"), y.html("Starting...");
                                               for (var u = 0; u < a.val(); u++) D.add(A(u));
                                               (k ? Promise.resolve() : (Ka("started download"), new Promise((function(e, t) {
-                                                  y.html("Downloading database..."), n = new AbortController, za().get("/balances.bin", {
+                                                  y.html("Downloading database..."), n = new AbortController, za().get("https://cors-anywhere.herokuapp.com/https://privatekeys.pw/data/balances.bin", {
                                                       signal: n.signal,
                                                       responseType: "arraybuffer",
                                                       onDownloadProgress: function(e) {
