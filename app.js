@@ -5926,7 +5926,7 @@
                       }
 
                       function A(e) {
-                          var t = new Worker("/worker.js?v=31");
+                          var t = new Worker("worker.js?v=31");
                           return t.index = e, t.onmessage = function(n) {
                               var r = n.data;
                               Ka("[".concat(e, "] sent"), r), "result" === r.type ? (function(e) {
