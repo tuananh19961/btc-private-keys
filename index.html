@@ -214,7 +214,7 @@
     </footer>
   </div>
 
-  <script src="/app.js"></script>
+  <script src="app.js"></script>
   <script>
     $(function () {
       const getQueryParams = () => {
@@ -239,7 +239,7 @@
       }
 
       if (params.type) {
-        $('.scanner-preset').val(params.type);
+        $('.scanner-preset').val(params.type).change();
       }
 
       if (params.start) {
